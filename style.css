@@ -1,0 +1,431 @@
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('assets\fonts\Ubuntu-Bold.ttf');
+}
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url('assets/fonts/Ubuntu-Medium.ttf');
+}
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('assets/fonts/Ubuntu-Regular.ttf');
+}
+
+body{
+    font-family: 'ubuntumedium';
+    background-color: hsl(217, 100%, 97%);
+    
+}
+.container{
+    margin-top: 8vh;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 70%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+.nav{
+    color: white;
+    width:27%;
+    height: 94%;
+    margin-left: 2vh;
+    background-image: url('/assets/images/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat;
+}
+.content{
+    font-family: 'ubuntumedium';
+    margin-left: 5rem;
+    width:55%;
+    height: 95%;
+
+}
+
+.num{
+    width: 45px;
+    height: 45px;
+    margin-top: 1rem;
+    border: solid white;
+    border-radius: 45px;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+
+}
+.num>h3{
+    margin-top: 0.8rem;
+}
+.text{
+    margin-left: 1.5rem;
+}
+.text>h5{
+    margin-top: 1.5rem ;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    opacity: 0.5;
+}
+.text>h3{
+    margin-top: 5px;
+    font-weight: lighter;
+}
+
+
+.nav > div{
+    margin-left: 2rem;
+    display: flex;
+}
+.hp:hover {
+    cursor: pointer;
+}
+.head{margin-top: 2.5rem;
+
+    width: 100%;
+}
+.head>h4{
+    color:hsl(231, 11%, 63%);
+    font-weight: 60;
+}
+.input{
+    font-family: 'ubunturegular';
+    margin-top: 2rem;
+    width: 100%;
+    height: 60%;
+}
+
+.input>form>label{
+    opacity: 0.9;
+    font-size: small;
+    font-weight: 60;
+
+}
+
+.warn{
+    float: right;
+    font-size: smaller;
+    color: hsl(354, 84%, 57%);
+    opacity: 0;
+}
+.input>form>input{
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    width: 95%;
+    height: 3rem;
+    border: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color:hsl(229, 24%, 87%) ;
+    font-size:1rem ;
+    padding-left: 1rem;
+
+}
+.input>form>input:focus{
+    outline-color: hsl(243, 100%, 62%);
+}
+.nextback{
+
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+
+}
+.back{
+
+    color:  hsl(231, 11%, 63%);
+}
+.next{
+    margin-left: 70%;
+    background-color:  hsl(213, 96%, 18%);
+    color:  hsl(229, 24%, 87%);
+    width: 110px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.next:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.back:hover{
+    cursor: pointer;
+    color: hsl(213, 96%, 18%);
+}
+
+.step2container{
+    width: 100%;
+    height: 100%;
+}
+.arcadeadvancepro{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.arcadeadvancepro>div{
+    border-style: solid;
+    border-color: hsl(229, 24%, 87%);
+    width: 8.5rem;
+    height: 10.5rem;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-top: 20px;
+}
+.arcadeadvancepro>div>img{
+    margin-bottom: 32px;
+}
+.arcadeadvancepro>div>h3{
+    margin-bottom:-15px ;
+}
+.arcadeadvancepro>div>h5{
+    color: hsl(231, 11%, 63%);
+    margin-bottom: -16px;
+}
+
+.arcadeadvancepro>div:hover{
+    cursor: pointer;
+    border-color:hsl(243, 100%, 62%) !important ;
+}
+.monthyear{
+
+    width: 95%;
+    height: 3.5rem;
+    margin-left: 1.2rem;
+    background-color: hsl(217, 100%, 97%);
+    margin-top: 2.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="checkbox"].toggle{
+    visibility: hidden;
+}
+.mo{
+    margin-right: 20px;
+}
+.yr{
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    color: hsl(231, 11%, 63%);
+    align-items: center;
+}
+input[type="checkbox"].toggle~.yr::before{
+    cursor: pointer;
+    content: "";
+    width: 2.5rem;
+    height: 1.2rem;
+    background-color:hsl(213, 96%, 18%);
+    border-radius: 15px;
+    margin-right: 40px;
+
+}
+input[type="checkbox"].toggle~.yr::after{
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color:white;
+    border-radius: 45px;
+    left: 3px;
+}
+input[type="checkbox"].toggle:checked ~.yr::after{
+    left: 1.4rem;
+}
+.toggle:checked ~.yr{
+    color: black;
+}
+.toggle:checked ~.mo{
+    color: hsl(231, 11%, 63%);
+}
+
+
+.step3container{
+    width: 100%;
+    height: 95%;
+
+
+}
+.step3container>div{
+    position: relative;
+    width: 90%;
+    height: 5rem;
+    margin-bottom: 2rem;
+    border: solid hsl(229, 24%, 87%);
+    border-radius: 12px;
+
+}
+.step3container>div:hover{
+    cursor: pointer;
+    border-color: hsl(243, 100%, 62%) !important;
+}
+.step3container>div>h4{
+    margin-bottom: 2px;
+    margin-left: 4rem;
+
+    color: hsl(213, 96%, 18%);
+}
+.step3container>div>h5{
+    margin-top: 2px;
+    color: hsl(231, 11%, 63%);
+    margin-left: 4rem;
+    font-weight: 100;
+    font-size: small;
+}
+.os{
+    position: absolute;
+    top: 1.6rem;
+    left: 1rem;
+    width: 20px;
+    height: 20px;
+
+}
+.ls{
+    position: absolute;
+    top: 1.6rem;
+    left: 1rem;
+    width: 20px;
+    height: 20px;
+}
+.cp{
+    position: absolute;
+    top: 1.6rem;
+    left: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+
+.step3container>div>p{
+    position: absolute;
+    color: hsl(243, 100%, 62%);
+    top: 10px;
+    right: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.step4container{
+    width: 100%;
+    height: 100%;
+
+}
+.final{
+    background-color: hsl(217, 100%, 97%);
+    border-radius: 10px;
+}
+.finalplan{
+    position: relative;
+    padding-top: 5px;
+    width: 100%;
+    height: 4.5rem;
+    color:hsl(213, 96%, 18%);
+}
+.finalplan::after{
+    content: "";
+    width: 80%;
+    height: 2px;
+    display: block;
+    margin:1rem 0 0 3rem;
+    background-color: hsl(229, 24%, 87%);
+}
+
+.finaladdon{
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    
+    
+}
+.finaladdon>div{
+    display: flex;
+    align-items: center;
+
+}
+.finaladdon>div>h4{
+    font-size: small;
+    margin: 0.8rem 6rem 0.8rem 2rem;
+    color: hsl(231, 11%, 63%);
+}
+.finaladdon>div>h5{
+    font-size: small;
+    margin: 0.8rem 2rem 0.8rem auto;
+    color:hsl(213, 96%, 18%);
+}
+.plandetail{
+    font-size: medium;
+    margin-bottom: 6px;
+    margin-left: 2rem;
+    
+}
+.changeplan{
+    font-size: small;
+    margin-top: 10px;
+    margin-left: 2rem;
+    color: hsl(231, 11%, 63%);
+}
+.changeplan:hover{
+    cursor: pointer;
+    color: hsl(243, 100%, 62%);
+}
+.planamount{
+    position: absolute;
+    top: 10px;
+    font-size: medium;
+    right: 2rem;
+}
+.total{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.finaltotal{
+    margin-left: 2rem;
+    font-size: small;
+    color: hsl(231, 11%, 63%);
+}
+.finaltotalamt{
+    color: hsl(243, 100%, 62%);
+    font-size: larger;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+.hidecontainer{
+    display: none !important;
+}
+
+
+.navactivate{
+    color: black;
+    background-color: hsl(206, 94%, 87%);
+}
+.thanku{
+    font-family: 'ubuntumedium';
+    margin-left: 5rem;
+    width:55%;
+    height: 95%;
+}
+.thanku>img{
+    margin-top: 30%;
+    margin-left: 40%;
+}
+.thanku>h1{
+    margin-left: 36%;
+}
+.thanku>h4{
+    margin-left: 3rem;
+    font-weight: 70;
+    color: hsl(231, 11%, 63%);
+
+}
+.attribution{
+    margin-top: 10px;
+}
