@@ -372,6 +372,9 @@ function calculate(){
     }
 }
 function thankyou(){
+    temp_database.name=""
+    temp_database.email=""
+    temp_database.phone=""
     document.querySelector(".content").classList.add("hidecontainer")
     document.querySelector(".thanku").classList.remove("hidecontainer")
 }
